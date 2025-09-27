@@ -1,0 +1,35 @@
+* {
+font-family: "0xProto Nerd Font", sans-serif;
+font-size: 13px;
+color: #d8dee9;
+}
+
+#waybar {
+  border-radius: 10px;
+  border: 2px solid transparent; /* needed to define border-box */
+  border-color: rgba(53,67,81,88);
+  background: rgba(30, 30, 30, 0.3) padding-box;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+}
+
+#workspaces button {
+padding: 0 8px;
+margin: 0 4px;
+border-radius: 6px;
+background: transparent;
+transition: background 0.2s;
+}
+
+#workspaces button.active {
+background: #63b5ff; /* kitty blue */
+color: #2e3440;
+}
+
+#workspaces button:hover {
+background: #ace7ff; /* kitty cyan */
+}
+
+#clock, #cpu, #memory, #pulseaudio, #network, #battery, #tray {
+padding: 0 10px;
+}
