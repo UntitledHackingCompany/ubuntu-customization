@@ -1,0 +1,36 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 6,
+  "margin-left": 20,
+  "margin-right": 20,
+  "height": 25,
+  "modules-left": ["battery"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "pulseaudio", "network", "tray"],
+  "gtk-layer-shell": true,
+
+  "clock": {
+    "format": "{:%a %b %d  %H:%M}"
+  },
+  "cpu": {
+    "format": " {usage:2}%"
+  },
+  "memory": {
+    "format": " {used:0.1f}G"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Mute",
+    "format-icons": ["", "", ""]
+  },
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": " Disconnected"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  }
+}
